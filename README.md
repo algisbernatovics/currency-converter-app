@@ -2,9 +2,9 @@
 
 A small PHP currency conversion application with a dedicated request client and conversion model.
 
-## Overview
+## Learning Goal
 
-A small PHP currency conversion application with a dedicated request client and conversion model.
+Practice separating API communication from domain logic in a small command-line PHP application.
 
 ## Features
 
@@ -18,15 +18,7 @@ A small PHP currency conversion application with a dedicated request client and 
 - Composer
 - API client pattern
 
-## Project Structure
-
-- `currency-converter/main.php` - entry point
-- `currency-converter/App/ClientRequest.php` - external request client
-- `currency-converter/App/Models/Convert.php` - conversion model
-
-## Getting Started
-
-From the project folder, install dependencies and run:
+## Run
 
 ```bash
 cd currency-converter
@@ -34,11 +26,13 @@ composer install
 php main.php
 ```
 
-## Portfolio Notes
+## Project Structure
 
-- Demonstrates a small API-backed PHP application structure.
-- Good example of separating request and domain logic.
+- `currency-converter/main.php` - entry point
+- `currency-converter/App/ClientRequest.php` - external request client
+- `currency-converter/App/App.php` - application flow
+- `currency-converter/App/Models/Convert.php` - conversion model
 
-## Status
+## License
 
-Portfolio-ready PHP exercise.
+MIT License. See [LICENSE](./LICENSE).
